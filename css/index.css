@@ -77,15 +77,15 @@ header {
     align-items: flex-end;
 }
 
+.nav-logo a {
+    display:flex;
+    align-items:flex-end;
+}
+
 nav {
     display:flex;
     justify-content: space-around;
     width:643px;
-}
-
-.nav-logo a {
-    display:flex;
-    align-items:flex-end;
 }
 
 header nav a {
@@ -94,7 +94,11 @@ header nav a {
     font-size:14px;
 }
 
-.homepage_main_img {
+header nav a:hover {
+    color:black;
+}
+
+.homepage_main_img, .about_main_img {
     margin: 37px 0 21px;
 }
 
@@ -104,6 +108,12 @@ header nav a {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.about-page .top-content {
+    padding: 0 20px 20px;
+    display: block;
+    margin-bottom:0;
 }
 
 .top-content .text-container {
@@ -181,10 +191,51 @@ header nav a {
     background-color:dodgerblue;
 }
 
+
+.about-page .middle-content {
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border:none;
+}
+
+.about-page .middle-content .about-box {
+    width: 48%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 30px;
+    padding-top: 20px;
+
+}
+
+.about-page .middle-content .about-box img  {
+    margin-bottom:10px;
+}
+.about-page .middle-content .about-box h2, .about-page .middle-content .about-box p {
+    margin-bottom:10px;
+    padding:0;
+}
+
+.about-page .middle-content .about-box button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 15px;
+    background-color: white;
+    margin: 10px 0 20px;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+.about-page .bottom-content {
+    display: block;
+    padding: 10px 5px 30px;
+    margin-bottom: 10px;
 }
 
 .bottom-content .text-container {

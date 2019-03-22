@@ -273,6 +273,8 @@ header nav a:hover {
 
 }
 
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -313,4 +315,18 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 799px) {
+    .container { 
+        width:90%;
+    }
+
+    .about-page .middle-content .about-box {
+        width:100%;
+    }
+
+    .about-page .middle-content .about-box img {
+        width:100%;
+    }
 }

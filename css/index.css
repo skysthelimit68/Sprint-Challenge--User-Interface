@@ -110,7 +110,7 @@ header nav a:hover {
     border-bottom: 1px dashed black;
 }
 
-.about-page .top-content {
+.about-page .top-content, .contact-page .top-content {
     padding: 0 20px 20px;
     display: block;
     margin-bottom:0;
@@ -263,7 +263,15 @@ header nav a:hover {
 .form-full-field, .form-half-field {
     margin-top:20px;
 }
+.form-wrap button {
+    padding:10px 40px;
+    font-size:14px;
+    background: #34b034;
+    border-radius: none;
+    border: 1px solid #ccc;
+    margin: 30px auto;
 
+}
 
 .bottom-content {
     display: flex;
@@ -271,7 +279,7 @@ header nav a:hover {
     justify-content: space-around;
 }
 
-.about-page .bottom-content {
+.about-page .bottom-content, .contact-page .bottom-content {
     display: block;
     padding: 10px 5px 30px;
     margin-bottom: 10px;
@@ -285,11 +293,6 @@ header nav a:hover {
     padding-right: 0;
 }
 
-.contact-page footer {
-    position: fixed;
-    bottom: 0;
-    width: 800px;
-}
 
 
 

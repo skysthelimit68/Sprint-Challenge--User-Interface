@@ -71,12 +71,49 @@ p {
     margin: 0 auto;
 }
 
+header {
+    padding-top: 20px;
+    display:inline-flex;
+    align-items: flex-end;
+}
+
+.nav-logo a {
+    display:flex;
+    align-items:flex-end;
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+    width:643px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size:14px;
+}
+
+header nav a:hover {
+    color:black;
+}
+
+.homepage_main_img, .about_main_img {
+    margin: 37px 0 21px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.about-page .top-content, .contact-page .top-content {
+    padding: 0 20px 20px;
+    display: block;
+    margin-bottom:0;
 }
 
 .top-content .text-container {
@@ -101,6 +138,8 @@ p {
     justify-content: space-evenly;
 }
 
+
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -112,10 +151,140 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(1) {
+    background-color:teal;
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background-color:gold;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+    background-color:cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background-color:coral;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+    background-color:crimson;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background-color:forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+    background-color:darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background-color:hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+    background-color:indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background-color:dodgerblue;
+}
+
+
+.about-page .middle-content {
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border:none;
+}
+
+.about-page .middle-content .about-box {
+    width: 48%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 30px;
+    padding-top: 20px;
+
+}
+
+.about-page .middle-content .about-box img  {
+    margin-bottom:10px;
+}
+.about-page .middle-content .about-box h2, .about-page .middle-content .about-box p {
+    margin-bottom:10px;
+    padding:0;
+}
+
+.about-page .middle-content .about-box button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 15px;
+    background-color: white;
+    margin: 10px 0 20px;
+}
+
+.form-wrap {
+    padding:20px;
+}
+
+.form-wrap textarea, .form-wrap  input {
+    padding: 10px;
+    margin-top: 5px;
+    font-family: monospace, serif;
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+    border-radius: 0;
+    color: #000;
+    width:100%;
+    font-size:14px;
+}
+
+.form-wrap label {
+    color:#666;
+    
+}
+
+ #contact-form {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.form-half-field{
+    width:48%;
+}
+.form-full-field {
+    width:100%;   
+}
+
+.form-full-field, .form-half-field {
+    margin-top:20px;
+}
+.form-wrap button {
+    padding:10px 40px;
+    font-size:14px;
+    background: #34b034;
+    border-radius: none;
+    border: 1px solid #ccc;
+    margin: 30px auto;
+
+}
+
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+.about-page .bottom-content, .contact-page .bottom-content {
+    display: block;
+    padding: 10px 5px 30px;
+    margin-bottom: 10px;
 }
 
 .bottom-content .text-container {
@@ -125,6 +294,9 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+
+
 
 footer {
     width: 100%;
@@ -143,4 +315,21 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 799px) {
+    .container { 
+        width:90%;
+    }
+
+    .about-page .middle-content .about-box {
+        width:100%;
+    }
+
+    .about-page .middle-content .about-box img {
+        width:100%;
+    }
+
+   
+
 }
